@@ -18,10 +18,9 @@ This is a simple Tic Tac Toe game built with React. Players can compete against 
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/tic-tac-toe.git
-cd tic-tac-toe
-npm install
-npm start
+   npm install
+   npm start
+
 
 ## Usage
 - Enter the names of the two players.
