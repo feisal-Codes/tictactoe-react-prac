@@ -1,0 +1,21 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true // ecognize Node.js globals
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": "off", // If you're using React 17+
+    "react/prop-types": "off", // If you’re not using PropTypes
+    "no-unused-vars": "warn", // Change to "off" to disable
+    "quotes": ["error", "single"], // Adjust quotes to your preference
+    "jsx-quotes": ["error", "prefer-double"] // If needed
+  }
+}
