@@ -1,46 +1,36 @@
-# Getting Started with Create React App
+# Tic Tac Toe Game
+#<a>https://tictactoe-ten-sooty.vercel.app/</a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This is a simple Tic Tac Toe game built with React. Players can compete against each other, track their scores, and undo or redo their moves. The game supports dynamic board sizes, making it a fun challenge for players of all ages.
 
-## Available Scripts
+## Features
+- **Two Player Mode**: Play against a friend.
+- **Dynamic Board Sizes**: Choose between 3x3 or 5x5 boards.
+- **Score Tracking**: Keep track of scores for each player.
+- **Undo/Redo Functionality**: Easily revert or reapply moves.
+- **Game Reset**: Restart the game at any time.
 
-In the project directory, you can run:
+## Technologies Used
+- **React**: For building the user interface.
+- **TypeScript**: For type safety and better developer experience.
+- **Tailwind CSS**: For styling the application (if you used Tailwind; otherwise, specify your styling method).
 
-### `npm start`
+## Installation
+1. Clone the repository:
+   ```bash
+   npm install
+   npm start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Usage
+- Enter the names of the two players.
+- Choose the desired board size (3x3 or 5x5).
+- Take turns clicking on the board to place your mark (O or X).
+- Use the Undo and Redo buttons to manage your moves.
+- The game ends when a player wins or the board is full.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Game Logic
+- The game checks for winning conditions after each move.
+- Scores are updated based on the winner.
+- Players can reset the game at any time to start fresh.
