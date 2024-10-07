@@ -20,10 +20,10 @@ export function Header() {
       >
         <Link to="">
           {' '}
-          <img src={logo} alt="Logo" className="inline-block h-20" />
-          <h1 className="text-2xl">React Tools</h1>
+          {/* <img src={logo} alt="Logo" className="inline-block h-20" /> */}
+          <h1 className="text-2xl">Menu</h1>
         </Link>
-        <Form
+        {/* <Form
           className="relative text-right"
           // onSubmit={handleSearchSubmit}
           action="/Products"
@@ -36,10 +36,19 @@ export function Header() {
             className="absolute right-0 top-0 rounded py-2 px-3 
  text-gray-700"
           />
-        </Form>
+        </Form> */}
 
         <nav>
           <NavLink
+            to="Books"
+            className={({ isActive }) =>
+              `text-white no-underline p-1 pb-0.5 border-solid 
+   border-b-2 ${isActive ? 'border-white' : 'border-transparent'}`
+            }
+          >
+            Books
+          </NavLink>
+          {/* <NavLink
             to="products"
             className={({ isActive }) =>
               `text-white no-underline p-1 pb-0.5 border-solid 
@@ -47,7 +56,7 @@ export function Header() {
             }
           >
             Products
-          </NavLink>
+          </NavLink> */}
           <NavLink
             to="tictac"
             className={({ isActive }) =>
@@ -57,7 +66,7 @@ export function Header() {
           >
             TicTacToe
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to="person_Score"
             className={({ isActive }) =>
               `text-white no-underline p-1 pb-0.5 border-solid 
@@ -74,7 +83,7 @@ export function Header() {
             }
           >
             Admin
-          </NavLink>
+          </NavLink> */}
         </nav>
       </header>
     </>

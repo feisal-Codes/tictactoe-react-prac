@@ -15,7 +15,8 @@
     "react/react-in-jsx-scope": "off", // If you're using React 17+
     "react/prop-types": "off", // If you’re not using PropTypes
     "no-unused-vars": "warn", // Change to "off" to disable
-    "quotes": ["error", "single"], // Adjust quotes to your preference
+    "quotes": ["error", "single",{ "allowTemplateLiterals": true }], // Adjust quotes to your preference
     "jsx-quotes": ["error", "prefer-double"] // If needed
+
   }
 }
